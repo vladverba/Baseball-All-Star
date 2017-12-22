@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0143A0F1F0F06100043F9C8 /* coinsbaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0143A0E1F0F06100043F9C8 /* coinsbaseball.png */; };
+		E0143A131F0F31F10043F9C8 /* ping.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0143A121F0F31F10043F9C8 /* ping.wav */; };
+		E064AD351F317A3600F7BE4B /* unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E064AD341F317A3600F7BE4B /* unlock.png */; };
+		E064AD371F317AAA00F7BE4B /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = E064AD361F317AAA00F7BE4B /* remove.png */; };
+		E064AD391F317B3E00F7BE4B /* unlockall.png in Resources */ = {isa = PBXBuildFile; fileRef = E064AD381F317B3E00F7BE4B /* unlockall.png */; };
+		E092835B1F1008810023B8F5 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E092835A1F1008810023B8F5 /* Chartboost.framework */; };
+		E092835D1F1008BB0023B8F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E092835C1F1008BB0023B8F5 /* Foundation.framework */; };
+		E092835F1F1008D10023B8F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E092835E1F1008D10023B8F5 /* UIKit.framework */; };
+		E0A6176E1F14687200C16DF4 /* JuJu Background.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0A6176D1F14687200C16DF4 /* JuJu Background.wav */; };
+		E0A617701F147ECB00C16DF4 /* unlockPlayers.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A6176F1F147ECB00C16DF4 /* unlockPlayers.png */; };
+		E0A617721F14832700C16DF4 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A617711F14832700C16DF4 /* Characters.swift */; };
+		E0A617741F14841500C16DF4 /* playerexample.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A617731F14841500C16DF4 /* playerexample.png */; };
+		E0A617891F149CA800C16DF4 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A617881F149CA800C16DF4 /* home.png */; };
+		E0AFB2211F257A05009C3BBC /* metsball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2201F257A05009C3BBC /* metsball.png */; };
+		E0AFB2231F257BFD009C3BBC /* giantsball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2221F257BFD009C3BBC /* giantsball.png */; };
+		E0AFB2251F257F08009C3BBC /* marlinsball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2241F257F08009C3BBC /* marlinsball.png */; };
+		E0AFB2291F258937009C3BBC /* americanball2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2281F258937009C3BBC /* americanball2.png */; };
+		E0AFB22B1F258D52009C3BBC /* blackedoutball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB22A1F258D52009C3BBC /* blackedoutball.png */; };
+		E0AFB22D1F258EE4009C3BBC /* goldball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB22C1F258EE4009C3BBC /* goldball.png */; };
+		E0AFB22F1F259242009C3BBC /* rainbowball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB22E1F259242009C3BBC /* rainbowball.png */; };
+		E0AFB2311F2594E4009C3BBC /* moneyball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2301F2594E4009C3BBC /* moneyball.png */; };
+		E0AFB2351F259932009C3BBC /* fidgetspinnerball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2341F259932009C3BBC /* fidgetspinnerball.png */; };
+		E0AFB2391F25A996009C3BBC /* marlinslock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2361F25A996009C3BBC /* marlinslock.png */; };
+		E0AFB23A1F25A996009C3BBC /* giantslock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2371F25A996009C3BBC /* giantslock.png */; };
+		E0AFB23B1F25A996009C3BBC /* metslock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2381F25A996009C3BBC /* metslock.png */; };
+		E0AFB23F1F25AF16009C3BBC /* americanlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB23C1F25AF16009C3BBC /* americanlock.png */; };
+		E0AFB2401F25AF16009C3BBC /* goldlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB23D1F25AF16009C3BBC /* goldlock.png */; };
+		E0AFB2411F25AF16009C3BBC /* blackedlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB23E1F25AF16009C3BBC /* blackedlock.png */; };
+		E0AFB2441F25B625009C3BBC /* fidgetlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2421F25B625009C3BBC /* fidgetlock.png */; };
+		E0AFB2451F25B625009C3BBC /* moneylock.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2431F25B625009C3BBC /* moneylock.png */; };
+		E0AFB2471F290A8F009C3BBC /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2461F290A8F009C3BBC /* star.png */; };
+		E0AFB2491F2910CF009C3BBC /* Confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB2481F2910CF009C3BBC /* Confetti.png */; };
+		E0AFB24B1F29126F009C3BBC /* americantrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB24A1F29126F009C3BBC /* americantrail.sks */; };
+		E0AFB24D1F291571009C3BBC /* whitestar.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFB24C1F291571009C3BBC /* whitestar.png */; };
+		E0D2A5841F0DE19100A1ADD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2A5831F0DE19100A1ADD3 /* AppDelegate.swift */; };
+		E0D2A5861F0DE19100A1ADD3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5851F0DE19100A1ADD3 /* GameScene.sks */; };
+		E0D2A5881F0DE19100A1ADD3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5871F0DE19100A1ADD3 /* Actions.sks */; };
+		E0D2A58A1F0DE19100A1ADD3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2A5891F0DE19100A1ADD3 /* GameScene.swift */; };
+		E0D2A58C1F0DE19100A1ADD3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2A58B1F0DE19100A1ADD3 /* GameViewController.swift */; };
+		E0D2A58F1F0DE19100A1ADD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A58D1F0DE19100A1ADD3 /* Main.storyboard */; };
+		E0D2A5911F0DE19100A1ADD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5901F0DE19100A1ADD3 /* Assets.xcassets */; };
+		E0D2A5941F0DE19100A1ADD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5921F0DE19100A1ADD3 /* LaunchScreen.storyboard */; };
+		E0D2A59F1F0DE19100A1ADD3 /* Baseball_All_StarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2A59E1F0DE19100A1ADD3 /* Baseball_All_StarTests.swift */; };
+		E0D2A5AA1F0DE19100A1ADD3 /* Baseball_All_StarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2A5A91F0DE19100A1ADD3 /* Baseball_All_StarUITests.swift */; };
+		E0D2A5B81F0DE1BE00A1ADD3 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D2A5B71F0DE1BE00A1ADD3 /* MainMenuScene.swift */; };
+		E0D2A5C71F0DE3A100A1ADD3 /* baseballenemyspikes.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5BA1F0DE3A100A1ADD3 /* baseballenemyspikes.png */; };
+		E0D2A5C81F0DE3A100A1ADD3 /* baseballenemyspikes2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5BB1F0DE3A100A1ADD3 /* baseballenemyspikes2.png */; };
+		E0D2A5C91F0DE3A100A1ADD3 /* baseballplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5BC1F0DE3A100A1ADD3 /* baseballplayer.png */; };
+		E0D2A5CA1F0DE3A100A1ADD3 /* baseballwhistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5BD1F0DE3A100A1ADD3 /* baseballwhistle.wav */; };
+		E0D2A5CB1F0DE3A100A1ADD3 /* Dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5BE1F0DE3A100A1ADD3 /* Dirt.png */; };
+		E0D2A5CC1F0DE3A100A1ADD3 /* enemybaseballgreen.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5BF1F0DE3A100A1ADD3 /* enemybaseballgreen.png */; };
+		E0D2A5CD1F0DE3A100A1ADD3 /* gloveattempt.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C01F0DE3A100A1ADD3 /* gloveattempt.png */; };
+		E0D2A5CE1F0DE3A100A1ADD3 /* likeBaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C11F0DE3A100A1ADD3 /* likeBaseball.png */; };
+		E0D2A5CF1F0DE3A100A1ADD3 /* rateBaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C21F0DE3A100A1ADD3 /* rateBaseball.png */; };
+		E0D2A5D01F0DE3A100A1ADD3 /* removeads.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C31F0DE3A100A1ADD3 /* removeads.png */; };
+		E0D2A5D11F0DE3A100A1ADD3 /* shareBaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C41F0DE3A100A1ADD3 /* shareBaseball.png */; };
+		E0D2A5D21F0DE3A100A1ADD3 /* switchsides.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C51F0DE3A100A1ADD3 /* switchsides.wav */; };
+		E0D2A5D31F0DE3A100A1ADD3 /* Untitled4.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5C61F0DE3A100A1ADD3 /* Untitled4.png */; };
+		E0D2A5D51F0DE3B600A1ADD3 /* KrinkesRegularPERSONAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5D41F0DE3B600A1ADD3 /* KrinkesRegularPERSONAL.ttf */; };
+		E0D2A5D71F0DE4A000A1ADD3 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5D61F0DE4A000A1ADD3 /* MyParticle.sks */; };
+		E0D2A5DB1F0DE58E00A1ADD3 /* playbaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D2A5DA1F0DE58E00A1ADD3 /* playbaseball.png */; };
+		E0D2A5DD1F0DE60600A1ADD3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5DC1F0DE60600A1ADD3 /* GoogleMobileAds.framework */; };
+		E0D2A5E01F0DEF4D00A1ADD3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5DF1F0DEF4D00A1ADD3 /* AdSupport.framework */; };
+		E0D2A5E21F0DEF5300A1ADD3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5E11F0DEF5300A1ADD3 /* AudioToolbox.framework */; };
+		E0D2A5E41F0DEF5800A1ADD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5E31F0DEF5800A1ADD3 /* AVFoundation.framework */; };
+		E0D2A5E81F0DEF6100A1ADD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5E51F0DEF6100A1ADD3 /* CoreGraphics.framework */; };
+		E0D2A5E91F0DEF6100A1ADD3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5E61F0DEF6100A1ADD3 /* CoreMedia.framework */; };
+		E0D2A5EA1F0DEF6100A1ADD3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5E71F0DEF6100A1ADD3 /* CoreTelephony.framework */; };
+		E0D2A5ED1F0DEF6C00A1ADD3 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5EB1F0DEF6C00A1ADD3 /* EventKit.framework */; };
+		E0D2A5EE1F0DEF6C00A1ADD3 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5EC1F0DEF6C00A1ADD3 /* EventKitUI.framework */; };
+		E0D2A5F01F0DEF7200A1ADD3 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5EF1F0DEF7200A1ADD3 /* MediaPlayer.framework */; };
+		E0D2A5F21F0DEF7800A1ADD3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5F11F0DEF7800A1ADD3 /* MessageUI.framework */; };
+		E0D2A5F41F0DEF7C00A1ADD3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5F31F0DEF7C00A1ADD3 /* StoreKit.framework */; };
+		E0D2A5F61F0DEF8200A1ADD3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D2A5F51F0DEF8200A1ADD3 /* SystemConfiguration.framework */; };
+		E0E905CF1F131E2900CA6E3A /* watchtorevive.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E905CE1F131E2900CA6E3A /* watchtorevive.png */; };
+		E0E905D11F1321DF00CA6E3A /* taptocontinue.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E905D01F1321DF00CA6E3A /* taptocontinue.png */; };
+		E0FFCBDE1F15E5280054A908 /* lockbaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0FFCBDD1F15E5280054A908 /* lockbaseball.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0D2A59B1F0DE19100A1ADD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0D2A5781F0DE19100A1ADD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0D2A57F1F0DE19100A1ADD3;
+			remoteInfo = "Baseball All Star";
+		};
+		E0D2A5A61F0DE19100A1ADD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0D2A5781F0DE19100A1ADD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0D2A57F1F0DE19100A1ADD3;
+			remoteInfo = "Baseball All Star";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0143A0E1F0F06100043F9C8 /* coinsbaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinsbaseball.png; sourceTree = "<group>"; };
+		E0143A121F0F31F10043F9C8 /* ping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ping.wav; sourceTree = "<group>"; };
+		E064AD341F317A3600F7BE4B /* unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlock.png; sourceTree = "<group>"; };
+		E064AD361F317AAA00F7BE4B /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
+		E064AD381F317B3E00F7BE4B /* unlockall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockall.png; sourceTree = "<group>"; };
+		E092835A1F1008810023B8F5 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		E092835C1F1008BB0023B8F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E092835E1F1008D10023B8F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E09283601F1009540023B8F5 /* Baseball All Star-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Baseball All Star-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0A6176D1F14687200C16DF4 /* JuJu Background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "JuJu Background.wav"; sourceTree = "<group>"; };
+		E0A6176F1F147ECB00C16DF4 /* unlockPlayers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockPlayers.png; sourceTree = "<group>"; };
+		E0A617711F14832700C16DF4 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		E0A617731F14841500C16DF4 /* playerexample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerexample.png; sourceTree = "<group>"; };
+		E0A617881F149CA800C16DF4 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		E0AFB2201F257A05009C3BBC /* metsball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metsball.png; sourceTree = "<group>"; };
+		E0AFB2221F257BFD009C3BBC /* giantsball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giantsball.png; sourceTree = "<group>"; };
+		E0AFB2241F257F08009C3BBC /* marlinsball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marlinsball.png; sourceTree = "<group>"; };
+		E0AFB2281F258937009C3BBC /* americanball2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = americanball2.png; sourceTree = "<group>"; };
+		E0AFB22A1F258D52009C3BBC /* blackedoutball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackedoutball.png; sourceTree = "<group>"; };
+		E0AFB22C1F258EE4009C3BBC /* goldball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldball.png; sourceTree = "<group>"; };
+		E0AFB22E1F259242009C3BBC /* rainbowball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbowball.png; sourceTree = "<group>"; };
+		E0AFB2301F2594E4009C3BBC /* moneyball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneyball.png; sourceTree = "<group>"; };
+		E0AFB2341F259932009C3BBC /* fidgetspinnerball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fidgetspinnerball.png; sourceTree = "<group>"; };
+		E0AFB2361F25A996009C3BBC /* marlinslock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marlinslock.png; sourceTree = "<group>"; };
+		E0AFB2371F25A996009C3BBC /* giantslock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giantslock.png; sourceTree = "<group>"; };
+		E0AFB2381F25A996009C3BBC /* metslock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metslock.png; sourceTree = "<group>"; };
+		E0AFB23C1F25AF16009C3BBC /* americanlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = americanlock.png; sourceTree = "<group>"; };
+		E0AFB23D1F25AF16009C3BBC /* goldlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldlock.png; sourceTree = "<group>"; };
+		E0AFB23E1F25AF16009C3BBC /* blackedlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackedlock.png; sourceTree = "<group>"; };
+		E0AFB2421F25B625009C3BBC /* fidgetlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fidgetlock.png; sourceTree = "<group>"; };
+		E0AFB2431F25B625009C3BBC /* moneylock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneylock.png; sourceTree = "<group>"; };
+		E0AFB2461F290A8F009C3BBC /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		E0AFB2481F2910CF009C3BBC /* Confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Confetti.png; sourceTree = "<group>"; };
+		E0AFB24A1F29126F009C3BBC /* americantrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = americantrail.sks; sourceTree = "<group>"; };
+		E0AFB24C1F291571009C3BBC /* whitestar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitestar.png; sourceTree = "<group>"; };
+		E0D2A5801F0DE19100A1ADD3 /* Baseball All Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baseball All Star.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D2A5831F0DE19100A1ADD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0D2A5851F0DE19100A1ADD3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E0D2A5871F0DE19100A1ADD3 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		E0D2A5891F0DE19100A1ADD3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E0D2A58B1F0DE19100A1ADD3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E0D2A58E1F0DE19100A1ADD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0D2A5901F0DE19100A1ADD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0D2A5931F0DE19100A1ADD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0D2A5951F0DE19100A1ADD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0D2A59A1F0DE19100A1ADD3 /* Baseball All StarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baseball All StarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D2A59E1F0DE19100A1ADD3 /* Baseball_All_StarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baseball_All_StarTests.swift; sourceTree = "<group>"; };
+		E0D2A5A01F0DE19100A1ADD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0D2A5A51F0DE19100A1ADD3 /* Baseball All StarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baseball All StarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D2A5A91F0DE19100A1ADD3 /* Baseball_All_StarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baseball_All_StarUITests.swift; sourceTree = "<group>"; };
+		E0D2A5AB1F0DE19100A1ADD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0D2A5B71F0DE1BE00A1ADD3 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		E0D2A5BA1F0DE3A100A1ADD3 /* baseballenemyspikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseballenemyspikes.png; sourceTree = "<group>"; };
+		E0D2A5BB1F0DE3A100A1ADD3 /* baseballenemyspikes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseballenemyspikes2.png; sourceTree = "<group>"; };
+		E0D2A5BC1F0DE3A100A1ADD3 /* baseballplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseballplayer.png; sourceTree = "<group>"; };
+		E0D2A5BD1F0DE3A100A1ADD3 /* baseballwhistle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = baseballwhistle.wav; sourceTree = "<group>"; };
+		E0D2A5BE1F0DE3A100A1ADD3 /* Dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dirt.png; sourceTree = "<group>"; };
+		E0D2A5BF1F0DE3A100A1ADD3 /* enemybaseballgreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemybaseballgreen.png; sourceTree = "<group>"; };
+		E0D2A5C01F0DE3A100A1ADD3 /* gloveattempt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gloveattempt.png; sourceTree = "<group>"; };
+		E0D2A5C11F0DE3A100A1ADD3 /* likeBaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeBaseball.png; sourceTree = "<group>"; };
+		E0D2A5C21F0DE3A100A1ADD3 /* rateBaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rateBaseball.png; sourceTree = "<group>"; };
+		E0D2A5C31F0DE3A100A1ADD3 /* removeads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = removeads.png; sourceTree = "<group>"; };
+		E0D2A5C41F0DE3A100A1ADD3 /* shareBaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareBaseball.png; sourceTree = "<group>"; };
+		E0D2A5C51F0DE3A100A1ADD3 /* switchsides.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = switchsides.wav; sourceTree = "<group>"; };
+		E0D2A5C61F0DE3A100A1ADD3 /* Untitled4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled4.png; sourceTree = "<group>"; };
+		E0D2A5D41F0DE3B600A1ADD3 /* KrinkesRegularPERSONAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KrinkesRegularPERSONAL.ttf; sourceTree = "<group>"; };
+		E0D2A5D61F0DE4A000A1ADD3 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		E0D2A5DA1F0DE58E00A1ADD3 /* playbaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbaseball.png; sourceTree = "<group>"; };
+		E0D2A5DC1F0DE60600A1ADD3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		E0D2A5DF1F0DEF4D00A1ADD3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E0D2A5E11F0DEF5300A1ADD3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E0D2A5E31F0DEF5800A1ADD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E0D2A5E51F0DEF6100A1ADD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0D2A5E61F0DEF6100A1ADD3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E0D2A5E71F0DEF6100A1ADD3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E0D2A5EB1F0DEF6C00A1ADD3 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		E0D2A5EC1F0DEF6C00A1ADD3 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		E0D2A5EF1F0DEF7200A1ADD3 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E0D2A5F11F0DEF7800A1ADD3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E0D2A5F31F0DEF7C00A1ADD3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E0D2A5F51F0DEF8200A1ADD3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E0E905CE1F131E2900CA6E3A /* watchtorevive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watchtorevive.png; sourceTree = "<group>"; };
+		E0E905D01F1321DF00CA6E3A /* taptocontinue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taptocontinue.png; sourceTree = "<group>"; };
+		E0FFCBDD1F15E5280054A908 /* lockbaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lockbaseball.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0D2A57D1F0DE19100A1ADD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E092835F1F1008D10023B8F5 /* UIKit.framework in Frameworks */,
+				E092835D1F1008BB0023B8F5 /* Foundation.framework in Frameworks */,
+				E0D2A5F61F0DEF8200A1ADD3 /* SystemConfiguration.framework in Frameworks */,
+				E0D2A5F41F0DEF7C00A1ADD3 /* StoreKit.framework in Frameworks */,
+				E0D2A5F21F0DEF7800A1ADD3 /* MessageUI.framework in Frameworks */,
+				E0D2A5F01F0DEF7200A1ADD3 /* MediaPlayer.framework in Frameworks */,
+				E0D2A5ED1F0DEF6C00A1ADD3 /* EventKit.framework in Frameworks */,
+				E0D2A5EE1F0DEF6C00A1ADD3 /* EventKitUI.framework in Frameworks */,
+				E0D2A5E81F0DEF6100A1ADD3 /* CoreGraphics.framework in Frameworks */,
+				E092835B1F1008810023B8F5 /* Chartboost.framework in Frameworks */,
+				E0D2A5E91F0DEF6100A1ADD3 /* CoreMedia.framework in Frameworks */,
+				E0D2A5EA1F0DEF6100A1ADD3 /* CoreTelephony.framework in Frameworks */,
+				E0D2A5E41F0DEF5800A1ADD3 /* AVFoundation.framework in Frameworks */,
+				E0D2A5E21F0DEF5300A1ADD3 /* AudioToolbox.framework in Frameworks */,
+				E0D2A5E01F0DEF4D00A1ADD3 /* AdSupport.framework in Frameworks */,
+				E0D2A5DD1F0DE60600A1ADD3 /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D2A5971F0DE19100A1ADD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D2A5A21F0DE19100A1ADD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0A617751F1490DB00C16DF4 /* Ball */ = {
+			isa = PBXGroup;
+			children = (
+				E0AFB2241F257F08009C3BBC /* marlinsball.png */,
+				E0AFB2201F257A05009C3BBC /* metsball.png */,
+				E0AFB2221F257BFD009C3BBC /* giantsball.png */,
+				E0AFB22C1F258EE4009C3BBC /* goldball.png */,
+				E0AFB2301F2594E4009C3BBC /* moneyball.png */,
+				E0AFB22A1F258D52009C3BBC /* blackedoutball.png */,
+				E0AFB22E1F259242009C3BBC /* rainbowball.png */,
+				E0AFB2341F259932009C3BBC /* fidgetspinnerball.png */,
+				E0AFB2281F258937009C3BBC /* americanball2.png */,
+			);
+			name = Ball;
+			sourceTree = "<group>";
+		};
+		E0D2A5771F0DE19100A1ADD3 = {
+			isa = PBXGroup;
+			children = (
+				E0D2A5821F0DE19100A1ADD3 /* Baseball All Star */,
+				E0D2A59D1F0DE19100A1ADD3 /* Baseball All StarTests */,
+				E0D2A5A81F0DE19100A1ADD3 /* Baseball All StarUITests */,
+				E0D2A5811F0DE19100A1ADD3 /* Products */,
+				E0D2A5DE1F0DEF4D00A1ADD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0D2A5811F0DE19100A1ADD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2A5801F0DE19100A1ADD3 /* Baseball All Star.app */,
+				E0D2A59A1F0DE19100A1ADD3 /* Baseball All StarTests.xctest */,
+				E0D2A5A51F0DE19100A1ADD3 /* Baseball All StarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0D2A5821F0DE19100A1ADD3 /* Baseball All Star */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2A5831F0DE19100A1ADD3 /* AppDelegate.swift */,
+				E0D2A5851F0DE19100A1ADD3 /* GameScene.sks */,
+				E0D2A5871F0DE19100A1ADD3 /* Actions.sks */,
+				E0D2A5891F0DE19100A1ADD3 /* GameScene.swift */,
+				E0D2A5B71F0DE1BE00A1ADD3 /* MainMenuScene.swift */,
+				E0A617711F14832700C16DF4 /* Characters.swift */,
+				E0D2A58B1F0DE19100A1ADD3 /* GameViewController.swift */,
+				E0D2A58D1F0DE19100A1ADD3 /* Main.storyboard */,
+				E0D2A5901F0DE19100A1ADD3 /* Assets.xcassets */,
+				E0AFB24A1F29126F009C3BBC /* americantrail.sks */,
+				E064AD381F317B3E00F7BE4B /* unlockall.png */,
+				E064AD341F317A3600F7BE4B /* unlock.png */,
+				E064AD361F317AAA00F7BE4B /* remove.png */,
+				E0AFB24C1F291571009C3BBC /* whitestar.png */,
+				E0AFB2361F25A996009C3BBC /* marlinslock.png */,
+				E0AFB2371F25A996009C3BBC /* giantslock.png */,
+				E0AFB2381F25A996009C3BBC /* metslock.png */,
+				E0AFB23C1F25AF16009C3BBC /* americanlock.png */,
+				E0AFB23D1F25AF16009C3BBC /* goldlock.png */,
+				E0AFB23E1F25AF16009C3BBC /* blackedlock.png */,
+				E0AFB2421F25B625009C3BBC /* fidgetlock.png */,
+				E0AFB2431F25B625009C3BBC /* moneylock.png */,
+				E0AFB2461F290A8F009C3BBC /* star.png */,
+				E0AFB2481F2910CF009C3BBC /* Confetti.png */,
+				E0E905D71F1350A200CA6E3A /* Ads */,
+				E0D2A5B91F0DE38A00A1ADD3 /* Images */,
+				E0D2A5921F0DE19100A1ADD3 /* LaunchScreen.storyboard */,
+				E0D2A5951F0DE19100A1ADD3 /* Info.plist */,
+				E09283601F1009540023B8F5 /* Baseball All Star-Bridging-Header.h */,
+			);
+			path = "Baseball All Star";
+			sourceTree = "<group>";
+		};
+		E0D2A59D1F0DE19100A1ADD3 /* Baseball All StarTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2A59E1F0DE19100A1ADD3 /* Baseball_All_StarTests.swift */,
+				E0D2A5A01F0DE19100A1ADD3 /* Info.plist */,
+			);
+			path = "Baseball All StarTests";
+			sourceTree = "<group>";
+		};
+		E0D2A5A81F0DE19100A1ADD3 /* Baseball All StarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2A5A91F0DE19100A1ADD3 /* Baseball_All_StarUITests.swift */,
+				E0D2A5AB1F0DE19100A1ADD3 /* Info.plist */,
+			);
+			path = "Baseball All StarUITests";
+			sourceTree = "<group>";
+		};
+		E0D2A5B91F0DE38A00A1ADD3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E0A617751F1490DB00C16DF4 /* Ball */,
+				E0D2A5D41F0DE3B600A1ADD3 /* KrinkesRegularPERSONAL.ttf */,
+				E0E905D41F13507000CA6E3A /* Sounds */,
+				E0E905D51F13508100CA6E3A /* Particles */,
+				E0E905D61F13508E00CA6E3A /* Images */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E0D2A5DE1F0DEF4D00A1ADD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E092835E1F1008D10023B8F5 /* UIKit.framework */,
+				E092835C1F1008BB0023B8F5 /* Foundation.framework */,
+				E0D2A5F51F0DEF8200A1ADD3 /* SystemConfiguration.framework */,
+				E0D2A5F31F0DEF7C00A1ADD3 /* StoreKit.framework */,
+				E0D2A5F11F0DEF7800A1ADD3 /* MessageUI.framework */,
+				E0D2A5EF1F0DEF7200A1ADD3 /* MediaPlayer.framework */,
+				E0D2A5EB1F0DEF6C00A1ADD3 /* EventKit.framework */,
+				E0D2A5EC1F0DEF6C00A1ADD3 /* EventKitUI.framework */,
+				E0D2A5E51F0DEF6100A1ADD3 /* CoreGraphics.framework */,
+				E0D2A5E61F0DEF6100A1ADD3 /* CoreMedia.framework */,
+				E0D2A5E71F0DEF6100A1ADD3 /* CoreTelephony.framework */,
+				E0D2A5E31F0DEF5800A1ADD3 /* AVFoundation.framework */,
+				E0D2A5E11F0DEF5300A1ADD3 /* AudioToolbox.framework */,
+				E0D2A5DF1F0DEF4D00A1ADD3 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E905D41F13507000CA6E3A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2A5BD1F0DE3A100A1ADD3 /* baseballwhistle.wav */,
+				E0D2A5C51F0DE3A100A1ADD3 /* switchsides.wav */,
+				E0A6176D1F14687200C16DF4 /* JuJu Background.wav */,
+				E0143A121F0F31F10043F9C8 /* ping.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		E0E905D51F13508100CA6E3A /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				E0D2A5D61F0DE4A000A1ADD3 /* MyParticle.sks */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+		E0E905D61F13508E00CA6E3A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E0FFCBDD1F15E5280054A908 /* lockbaseball.png */,
+				E0A617881F149CA800C16DF4 /* home.png */,
+				E0A617731F14841500C16DF4 /* playerexample.png */,
+				E0E905D01F1321DF00CA6E3A /* taptocontinue.png */,
+				E0E905CE1F131E2900CA6E3A /* watchtorevive.png */,
+				E0143A0E1F0F06100043F9C8 /* coinsbaseball.png */,
+				E0D2A5DA1F0DE58E00A1ADD3 /* playbaseball.png */,
+				E0D2A5BA1F0DE3A100A1ADD3 /* baseballenemyspikes.png */,
+				E0D2A5BB1F0DE3A100A1ADD3 /* baseballenemyspikes2.png */,
+				E0D2A5BC1F0DE3A100A1ADD3 /* baseballplayer.png */,
+				E0D2A5BE1F0DE3A100A1ADD3 /* Dirt.png */,
+				E0D2A5BF1F0DE3A100A1ADD3 /* enemybaseballgreen.png */,
+				E0D2A5C01F0DE3A100A1ADD3 /* gloveattempt.png */,
+				E0D2A5C11F0DE3A100A1ADD3 /* likeBaseball.png */,
+				E0D2A5C21F0DE3A100A1ADD3 /* rateBaseball.png */,
+				E0A6176F1F147ECB00C16DF4 /* unlockPlayers.png */,
+				E0D2A5C31F0DE3A100A1ADD3 /* removeads.png */,
+				E0D2A5C41F0DE3A100A1ADD3 /* shareBaseball.png */,
+				E0D2A5C61F0DE3A100A1ADD3 /* Untitled4.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E0E905D71F1350A200CA6E3A /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				E092835A1F1008810023B8F5 /* Chartboost.framework */,
+				E0D2A5DC1F0DE60600A1ADD3 /* GoogleMobileAds.framework */,
+			);
+			name = Ads;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0D2A57F1F0DE19100A1ADD3 /* Baseball All Star */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D2A5AE1F0DE19100A1ADD3 /* Build configuration list for PBXNativeTarget "Baseball All Star" */;
+			buildPhases = (
+				E0D2A57C1F0DE19100A1ADD3 /* Sources */,
+				E0D2A57D1F0DE19100A1ADD3 /* Frameworks */,
+				E0D2A57E1F0DE19100A1ADD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Baseball All Star";
+			productName = "Baseball All Star";
+			productReference = E0D2A5801F0DE19100A1ADD3 /* Baseball All Star.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0D2A5991F0DE19100A1ADD3 /* Baseball All StarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D2A5B11F0DE19100A1ADD3 /* Build configuration list for PBXNativeTarget "Baseball All StarTests" */;
+			buildPhases = (
+				E0D2A5961F0DE19100A1ADD3 /* Sources */,
+				E0D2A5971F0DE19100A1ADD3 /* Frameworks */,
+				E0D2A5981F0DE19100A1ADD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0D2A59C1F0DE19100A1ADD3 /* PBXTargetDependency */,
+			);
+			name = "Baseball All StarTests";
+			productName = "Baseball All StarTests";
+			productReference = E0D2A59A1F0DE19100A1ADD3 /* Baseball All StarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0D2A5A41F0DE19100A1ADD3 /* Baseball All StarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D2A5B41F0DE19100A1ADD3 /* Build configuration list for PBXNativeTarget "Baseball All StarUITests" */;
+			buildPhases = (
+				E0D2A5A11F0DE19100A1ADD3 /* Sources */,
+				E0D2A5A21F0DE19100A1ADD3 /* Frameworks */,
+				E0D2A5A31F0DE19100A1ADD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0D2A5A71F0DE19100A1ADD3 /* PBXTargetDependency */,
+			);
+			name = "Baseball All StarUITests";
+			productName = "Baseball All StarUITests";
+			productReference = E0D2A5A51F0DE19100A1ADD3 /* Baseball All StarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0D2A5781F0DE19100A1ADD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = vladverba;
+				TargetAttributes = {
+					E0D2A57F1F0DE19100A1ADD3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NLF8UWRXLD;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					E0D2A5991F0DE19100A1ADD3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NLF8UWRXLD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0D2A57F1F0DE19100A1ADD3;
+					};
+					E0D2A5A41F0DE19100A1ADD3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NLF8UWRXLD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0D2A57F1F0DE19100A1ADD3;
+					};
+				};
+			};
+			buildConfigurationList = E0D2A57B1F0DE19100A1ADD3 /* Build configuration list for PBXProject "Baseball All Star" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0D2A5771F0DE19100A1ADD3;
+			productRefGroup = E0D2A5811F0DE19100A1ADD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0D2A57F1F0DE19100A1ADD3 /* Baseball All Star */,
+				E0D2A5991F0DE19100A1ADD3 /* Baseball All StarTests */,
+				E0D2A5A41F0DE19100A1ADD3 /* Baseball All StarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0D2A57E1F0DE19100A1ADD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0143A131F0F31F10043F9C8 /* ping.wav in Resources */,
+				E0A617741F14841500C16DF4 /* playerexample.png in Resources */,
+				E0D2A5C91F0DE3A100A1ADD3 /* baseballplayer.png in Resources */,
+				E0AFB23B1F25A996009C3BBC /* metslock.png in Resources */,
+				E0A617701F147ECB00C16DF4 /* unlockPlayers.png in Resources */,
+				E0AFB2471F290A8F009C3BBC /* star.png in Resources */,
+				E0AFB2411F25AF16009C3BBC /* blackedlock.png in Resources */,
+				E0D2A5D31F0DE3A100A1ADD3 /* Untitled4.png in Resources */,
+				E0AFB24B1F29126F009C3BBC /* americantrail.sks in Resources */,
+				E0D2A5CA1F0DE3A100A1ADD3 /* baseballwhistle.wav in Resources */,
+				E0AFB22F1F259242009C3BBC /* rainbowball.png in Resources */,
+				E064AD371F317AAA00F7BE4B /* remove.png in Resources */,
+				E0D2A5CB1F0DE3A100A1ADD3 /* Dirt.png in Resources */,
+				E0AFB23F1F25AF16009C3BBC /* americanlock.png in Resources */,
+				E0FFCBDE1F15E5280054A908 /* lockbaseball.png in Resources */,
+				E0AFB22D1F258EE4009C3BBC /* goldball.png in Resources */,
+				E0A6176E1F14687200C16DF4 /* JuJu Background.wav in Resources */,
+				E0D2A5CF1F0DE3A100A1ADD3 /* rateBaseball.png in Resources */,
+				E064AD351F317A3600F7BE4B /* unlock.png in Resources */,
+				E0A617891F149CA800C16DF4 /* home.png in Resources */,
+				E0AFB2251F257F08009C3BBC /* marlinsball.png in Resources */,
+				E0AFB2351F259932009C3BBC /* fidgetspinnerball.png in Resources */,
+				E0AFB24D1F291571009C3BBC /* whitestar.png in Resources */,
+				E0D2A58F1F0DE19100A1ADD3 /* Main.storyboard in Resources */,
+				E0D2A5861F0DE19100A1ADD3 /* GameScene.sks in Resources */,
+				E0D2A5911F0DE19100A1ADD3 /* Assets.xcassets in Resources */,
+				E0AFB2441F25B625009C3BBC /* fidgetlock.png in Resources */,
+				E0D2A5CE1F0DE3A100A1ADD3 /* likeBaseball.png in Resources */,
+				E0D2A5D51F0DE3B600A1ADD3 /* KrinkesRegularPERSONAL.ttf in Resources */,
+				E064AD391F317B3E00F7BE4B /* unlockall.png in Resources */,
+				E0E905CF1F131E2900CA6E3A /* watchtorevive.png in Resources */,
+				E0AFB2311F2594E4009C3BBC /* moneyball.png in Resources */,
+				E0D2A5941F0DE19100A1ADD3 /* LaunchScreen.storyboard in Resources */,
+				E0AFB2491F2910CF009C3BBC /* Confetti.png in Resources */,
+				E0D2A5CC1F0DE3A100A1ADD3 /* enemybaseballgreen.png in Resources */,
+				E0AFB2401F25AF16009C3BBC /* goldlock.png in Resources */,
+				E0D2A5C81F0DE3A100A1ADD3 /* baseballenemyspikes2.png in Resources */,
+				E0AFB23A1F25A996009C3BBC /* giantslock.png in Resources */,
+				E0AFB2291F258937009C3BBC /* americanball2.png in Resources */,
+				E0D2A5D21F0DE3A100A1ADD3 /* switchsides.wav in Resources */,
+				E0AFB2451F25B625009C3BBC /* moneylock.png in Resources */,
+				E0E905D11F1321DF00CA6E3A /* taptocontinue.png in Resources */,
+				E0AFB2231F257BFD009C3BBC /* giantsball.png in Resources */,
+				E0D2A5881F0DE19100A1ADD3 /* Actions.sks in Resources */,
+				E0D2A5D01F0DE3A100A1ADD3 /* removeads.png in Resources */,
+				E0AFB22B1F258D52009C3BBC /* blackedoutball.png in Resources */,
+				E0D2A5D11F0DE3A100A1ADD3 /* shareBaseball.png in Resources */,
+				E0AFB2391F25A996009C3BBC /* marlinslock.png in Resources */,
+				E0AFB2211F257A05009C3BBC /* metsball.png in Resources */,
+				E0D2A5DB1F0DE58E00A1ADD3 /* playbaseball.png in Resources */,
+				E0D2A5C71F0DE3A100A1ADD3 /* baseballenemyspikes.png in Resources */,
+				E0D2A5CD1F0DE3A100A1ADD3 /* gloveattempt.png in Resources */,
+				E0143A0F1F0F06100043F9C8 /* coinsbaseball.png in Resources */,
+				E0D2A5D71F0DE4A000A1ADD3 /* MyParticle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D2A5981F0DE19100A1ADD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D2A5A31F0DE19100A1ADD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0D2A57C1F0DE19100A1ADD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D2A58A1F0DE19100A1ADD3 /* GameScene.swift in Sources */,
+				E0D2A58C1F0DE19100A1ADD3 /* GameViewController.swift in Sources */,
+				E0D2A5B81F0DE1BE00A1ADD3 /* MainMenuScene.swift in Sources */,
+				E0D2A5841F0DE19100A1ADD3 /* AppDelegate.swift in Sources */,
+				E0A617721F14832700C16DF4 /* Characters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D2A5961F0DE19100A1ADD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D2A59F1F0DE19100A1ADD3 /* Baseball_All_StarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D2A5A11F0DE19100A1ADD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D2A5AA1F0DE19100A1ADD3 /* Baseball_All_StarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0D2A59C1F0DE19100A1ADD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0D2A57F1F0DE19100A1ADD3 /* Baseball All Star */;
+			targetProxy = E0D2A59B1F0DE19100A1ADD3 /* PBXContainerItemProxy */;
+		};
+		E0D2A5A71F0DE19100A1ADD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0D2A57F1F0DE19100A1ADD3 /* Baseball All Star */;
+			targetProxy = E0D2A5A61F0DE19100A1ADD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0D2A58D1F0DE19100A1ADD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0D2A58E1F0DE19100A1ADD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0D2A5921F0DE19100A1ADD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0D2A5931F0DE19100A1ADD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0D2A5AC1F0DE19100A1ADD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Baseball All Star/Baseball All Star-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0D2A5AD1F0DE19100A1ADD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Baseball All Star/Baseball All Star-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0D2A5AF1F0DE19100A1ADD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NLF8UWRXLD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Baseball\\ All\\ Star",
+					"$(PROJECT_DIR)/Baseball\\ All\\ Star",
+				);
+				INFOPLIST_FILE = "Baseball All Star/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladverba.Baseball-All-Star";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Baseball All Star/Baseball All Star-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E0D2A5B01F0DE19100A1ADD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NLF8UWRXLD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Baseball\\ All\\ Star",
+					"$(PROJECT_DIR)/Baseball\\ All\\ Star",
+				);
+				INFOPLIST_FILE = "Baseball All Star/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladverba.Baseball-All-Star";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Baseball All Star/Baseball All Star-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E0D2A5B21F0DE19100A1ADD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NLF8UWRXLD;
+				INFOPLIST_FILE = "Baseball All StarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladverba.Baseball-All-StarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baseball All Star.app/Baseball All Star";
+			};
+			name = Debug;
+		};
+		E0D2A5B31F0DE19100A1ADD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NLF8UWRXLD;
+				INFOPLIST_FILE = "Baseball All StarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladverba.Baseball-All-StarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baseball All Star.app/Baseball All Star";
+			};
+			name = Release;
+		};
+		E0D2A5B51F0DE19100A1ADD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NLF8UWRXLD;
+				INFOPLIST_FILE = "Baseball All StarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladverba.Baseball-All-StarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Baseball All Star";
+			};
+			name = Debug;
+		};
+		E0D2A5B61F0DE19100A1ADD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NLF8UWRXLD;
+				INFOPLIST_FILE = "Baseball All StarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladverba.Baseball-All-StarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Baseball All Star";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0D2A57B1F0DE19100A1ADD3 /* Build configuration list for PBXProject "Baseball All Star" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D2A5AC1F0DE19100A1ADD3 /* Debug */,
+				E0D2A5AD1F0DE19100A1ADD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D2A5AE1F0DE19100A1ADD3 /* Build configuration list for PBXNativeTarget "Baseball All Star" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D2A5AF1F0DE19100A1ADD3 /* Debug */,
+				E0D2A5B01F0DE19100A1ADD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D2A5B11F0DE19100A1ADD3 /* Build configuration list for PBXNativeTarget "Baseball All StarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D2A5B21F0DE19100A1ADD3 /* Debug */,
+				E0D2A5B31F0DE19100A1ADD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D2A5B41F0DE19100A1ADD3 /* Build configuration list for PBXNativeTarget "Baseball All StarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D2A5B51F0DE19100A1ADD3 /* Debug */,
+				E0D2A5B61F0DE19100A1ADD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0D2A5781F0DE19100A1ADD3 /* Project object */;
+}
